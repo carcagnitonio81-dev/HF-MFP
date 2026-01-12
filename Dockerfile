@@ -1,7 +1,7 @@
 FROM python:3.10-slim-buster
 
 # Set the working directory in the container to /app
-WORKDIR /app
+RUN git clone https://github.com/carcagnitonio81-dev/UnHided.git .
 
 # Install git
 RUN apt-get update && apt-get install -y git
